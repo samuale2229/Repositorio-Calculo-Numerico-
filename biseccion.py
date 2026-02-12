@@ -33,9 +33,9 @@ def biseccion(f, a, b, er, n):
 
 if __name__ == "__main__":
     # ejemplo
-    f = lambda x: math.exp(-x) - math.log(x)
-    a = 1
-    b = 2
+    f = lambda x:  x**2 - 4
+    a = 0
+    b = 5
     er = 0.01
     n = 100
 
@@ -43,4 +43,5 @@ if __name__ == "__main__":
     
     print(f"Raiz: {raiz:0.7f}")
     print(f"Error: {error:0.4f}")
+
     print(f"Iteraciones realizadas: {iteraciones}")
